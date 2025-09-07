@@ -1,0 +1,65 @@
+.calculator-bg {
+  width: 300px;          /* make it wider */
+  height: 400px;         /* taller → rectangle */
+  background-color: #3b3b40;  /* dark gray background */
+  border-radius: 20px;   /* rounded corners */
+  margin: 50px auto;     /* center it horizontally */
+  padding: 20px;         /* inner spacing */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* shadow */
+}
+
+.display {
+  width: 100%;           /* take full width inside calculator */
+  height: 60px;          /* height of display */
+  background-color: #e6edf3; /* light gray/blue screen */
+  border-radius: 12px;
+  margin-bottom: 9px;   /* space below screen for buttons */
+  display: flex;
+  align-items: center;   /* vertically center text */
+  justify-content: flex-end; /* align text to the right */
+  padding: 10px;
+  font-size: 28px;
+  font-family: monospace;
+  color: #1a1c20;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px;            /* space between buttons */
+}
+
+.buttons button{
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #1a1c20;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease;
+}
+
+.buttons .operator {
+  background-color: #f3f6fa;
+}
+
+.buttons .equal {
+  background-color: #ff8000;
+}
+
+.buttons .on-off{
+  background-color: #ff4d4d;
+  color: white;
+}
+.buttons .c{
+  background-color: #f2caca;
+  color: white;
+}
+
+.buttons button:active {
+  transform: translateY(2px); /* press effect */
+}
